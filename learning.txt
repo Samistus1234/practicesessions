@@ -1,3 +1,4 @@
 This is learning dem
 We are learning git basics
-o
+We are gradually moving to the intermediate topisc
+
