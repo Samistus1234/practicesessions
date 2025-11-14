@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ELAB NCLEX Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="header-left">
+                <h1 class="logo">ELAB NCLEX</h1>
+            </div>
+            <div class="header-right">
+                <div class="user-avatar">
+                    <span class="avatar-circle">U</span>
+                </div>
+                <button class="logout-btn">Logout</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Course Info Banner -->
+    <div class="course-banner">
+        <div class="container">
+            <h2 class="course-title">NCLEX Foundation 1 – October Cohort</h2>
+            <p class="course-subtitle">Saudi NCLEX Tutorial Program · Live + QBank</p>
+
+            <div class="progress-section">
+                <div class="progress-info">
+                    <span class="week-label">Week 3 of 8</span>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar" style="width: 42%"></div>
+                    </div>
+                    <span class="progress-percentage">42% completed</span>
+                </div>
+
+                <div class="next-class">
+                    <span class="next-class-label">Next Live Class:</span>
+                    <span class="next-class-info">Cardio Review – Tomorrow 7:00 PM</span>
+                    <a href="#" class="view-details-link">View details</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container main-container">
+        <div class="content-wrapper">
+            <!-- Main Column -->
+            <div class="main-column">
+                <!-- Next Up Card -->
+                <div class="card next-up-card">
+                    <h3 class="card-title">Next up in your program</h3>
+                    <div class="next-up-content">
+                        <h4 class="assignment-name">Complete: CardioVA1 Assignment</h4>
+                        <ul class="assignment-details">
+                            <li>12 / 30 questions done</li>
+                            <li>Due in 2 days</li>
+                        </ul>
+                        <div class="card-actions">
+                            <button class="btn btn-primary">Continue assignment</button>
+                            <button class="btn btn-secondary">View tasks</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Program Roadmap -->
+                <div class="program-roadmap">
+                    <h3 class="section-title">Program Roadmap</h3>
+                    <div class="roadmap-weeks">
+                        <div class="week-card completed">
+                            <h4 class="week-title">Week 1</h4>
+                            <p class="week-topic">Fundamentals</p>
+                            <span class="week-status">Completed ✓</span>
+                        </div>
+                        <div class="week-card completed">
+                            <h4 class="week-title">Week 2</h4>
+                            <p class="week-topic">Respiratory</p>
+                            <span class="week-status">Completed ✓</span>
+                        </div>
+                        <div class="week-card current">
+                            <h4 class="week-title">Week 3 (current)</h4>
+                            <p class="week-topic">Cardiovascular</p>
+                            <span class="week-status">In progress 🔥</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- This Week's Work -->
+                <div class="weekly-work">
+                    <h3 class="section-title">This week's work</h3>
+                    <div class="filter-tabs">
+                        <button class="tab active">All</button>
+                        <button class="tab">Pending</button>
+                        <button class="tab">Completed</button>
+                    </div>
+
+                    <div class="work-items">
+                        <!-- Assignment 1 -->
+                        <div class="work-item">
+                            <div class="work-item-header">
+                                <span class="work-type">[Assignment]</span>
+                                <span class="work-title">CardioVA1 – Core Questions</span>
+                            </div>
+                            <div class="work-item-status">
+                                <span class="status-badge in-progress">In progress</span>
+                                <span class="work-meta">12/30 done · Due: 18 Nov 11:59 PM</span>
+                            </div>
+                            <div class="work-item-actions">
+                                <button class="btn btn-primary btn-sm">Continue</button>
+                                <button class="btn btn-secondary btn-sm">View details</button>
+                            </div>
+                        </div>
+
+                        <!-- Assignment 2 -->
+                        <div class="work-item">
+                            <div class="work-item-header">
+                                <span class="work-type">[Assignment]</span>
+                                <span class="work-title">Drug Safety – Hypertension meds</span>
+                            </div>
+                            <div class="work-item-status">
+                                <span class="status-badge not-started">Not started</span>
+                                <span class="work-meta">0/20 · Due: 20 Nov</span>
+                            </div>
+                            <div class="work-item-actions">
+                                <button class="btn btn-primary btn-sm">Start now</button>
+                            </div>
+                        </div>
+
+                        <!-- Replay -->
+                        <div class="work-item">
+                            <div class="work-item-header">
+                                <span class="work-type">[Replay]</span>
+                                <span class="work-title">Heart Failure Tutorial – 60 min</span>
+                            </div>
+                            <div class="work-item-status">
+                                <span class="status-badge not-started">Not watched</span>
+                            </div>
+                            <div class="work-item-actions">
+                                <button class="btn btn-primary btn-sm">Watch replay</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <!-- Progress Stats -->
+                <div class="sidebar-card">
+                    <h3 class="sidebar-card-title">Your progress in this class</h3>
+                    <div class="stats-list">
+                        <div class="stat-item">
+                            <span class="stat-label">Program completion:</span>
+                            <span class="stat-value">42%</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Avg score:</span>
+                            <span class="stat-value">68%</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Weakest:</span>
+                            <span class="stat-value">Cardio, Neuro</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Study streak:</span>
+                            <span class="stat-value">4 days</span>
+                        </div>
+                    </div>
+                    <button class="btn btn-link">View detailed analytics</button>
+                </div>
+
+                <!-- Announcements -->
+                <div class="sidebar-card">
+                    <h3 class="sidebar-card-title">Announcements</h3>
+                    <div class="announcement">
+                        <p class="announcement-date">14 Nov – From your tutor:</p>
+                        <p class="announcement-text">"Please finish CardioVA1 before Saturday..."</p>
+                    </div>
+                    <button class="btn btn-link">View all</button>
+                </div>
+
+                <!-- Class Resources -->
+                <div class="sidebar-card">
+                    <h3 class="sidebar-card-title">Class resources</h3>
+                    <ul class="resource-list">
+                        <li class="resource-item">
+                            <span>• Cardio summary (PDF)</span>
+                            <a href="#" class="resource-link">Open</a>
+                        </li>
+                        <li class="resource-item">
+                            <span>• Drug sheet: Anti-HTN</span>
+                            <a href="#" class="resource-link">Open</a>
+                        </li>
+                        <li class="resource-item">
+                            <span>• Replay: ECG Basics</span>
+                            <a href="#" class="resource-link">Open</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Need Help -->
+                <div class="sidebar-card">
+                    <h3 class="sidebar-card-title">Need help?</h3>
+                    <div class="help-links">
+                        <a href="#" class="help-link">Ask your tutor</a>
+                        <a href="#" class="help-link">Contact ELAB Support</a>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </div>
+
+    <!-- Footer CTA -->
+    <div class="footer-cta">
+        <div class="container">
+            <p>Want extra practice beyond this class? <a href="#" class="cta-link">Explore full NCLEX platform</a></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
